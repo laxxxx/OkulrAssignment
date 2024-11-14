@@ -77,10 +77,9 @@ class RegistrationViewController: UIViewController {
     }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
-//        if validateInput() {
-//            navigateToNextScreen()
-//        }
-        navigateToNextScreen()
+        if validateInput() {
+            navigateToNextScreen()
+        }
     }
     
     // MARK: - Alert
