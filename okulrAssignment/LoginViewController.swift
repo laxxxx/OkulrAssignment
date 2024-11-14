@@ -23,13 +23,13 @@ class LoginViewController: UIViewController {
     @IBAction func loginTapped(_ sender: Any) {
         let username = self.usernameTextField.text ?? ""
         let password = self.passwordTextField.text ?? ""
-        
+        navigateToRegistration()
         // Mock API Call
-        if username == "test@gmail.com" && password == "password" {
-            navigateToRegistration()
-        } else {
-            showAlert(message: "Invalid credentials")
-        }
+//        if username == "test@gmail.com" && password == "password" {
+//            navigateToRegistration()
+//        } else {
+//            showAlert(message: "Invalid credentials")
+//        }
     }
     
     func navigateToRegistration() {
