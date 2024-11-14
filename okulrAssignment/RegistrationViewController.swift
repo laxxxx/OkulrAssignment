@@ -1,19 +1,16 @@
 //
-//  ViewController.swift
+//  RegistrationViewController.swift
 //  okulrAssignment
 //
 //  Created by Sree Lakshman on 14/11/24.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController {
-
+class RegistrationViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
-
