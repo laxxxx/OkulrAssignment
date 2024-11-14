@@ -6,8 +6,15 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6B72DCFFE48768431A083B7B /* Pods_okulrAssignment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C71B52276D424FA7A44F4935 /* Pods_okulrAssignment.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		4B8169FA9ECC698B101CA6FF /* Pods-okulrAssignment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okulrAssignment.release.xcconfig"; path = "Target Support Files/Pods-okulrAssignment/Pods-okulrAssignment.release.xcconfig"; sourceTree = "<group>"; };
+		7E987C13265BC45011D756B3 /* Pods-okulrAssignment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-okulrAssignment.debug.xcconfig"; path = "Target Support Files/Pods-okulrAssignment/Pods-okulrAssignment.debug.xcconfig"; sourceTree = "<group>"; };
 		805AFFC62CE5E809001D2F33 /* okulrAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = okulrAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C71B52276D424FA7A44F4935 /* Pods_okulrAssignment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_okulrAssignment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -36,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B72DCFFE48768431A083B7B /* Pods_okulrAssignment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		128DCD4CBF3CB3BA2A6559A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E987C13265BC45011D756B3 /* Pods-okulrAssignment.debug.xcconfig */,
+				4B8169FA9ECC698B101CA6FF /* Pods-okulrAssignment.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5F483D28F44AF12A4DF3EFF0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C71B52276D424FA7A44F4935 /* Pods_okulrAssignment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		805AFFBD2CE5E809001D2F33 = {
 			isa = PBXGroup;
 			children = (
 				805AFFC82CE5E809001D2F33 /* okulrAssignment */,
 				805AFFC72CE5E809001D2F33 /* Products */,
+				128DCD4CBF3CB3BA2A6559A3 /* Pods */,
+				5F483D28F44AF12A4DF3EFF0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 805AFFD92CE5E80A001D2F33 /* Build configuration list for PBXNativeTarget "okulrAssignment" */;
 			buildPhases = (
+				3AC5679876BA4DC2D7757A53 /* [CP] Check Pods Manifest.lock */,
 				805AFFC22CE5E809001D2F33 /* Sources */,
 				805AFFC32CE5E809001D2F33 /* Frameworks */,
 				805AFFC42CE5E809001D2F33 /* Resources */,
+				3CD2B67E3892319160EE1349 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +107,6 @@
 				805AFFC82CE5E809001D2F33 /* okulrAssignment */,
 			);
 			name = okulrAssignment;
-			packageProductDependencies = (
-			);
 			productName = okulrAssignment;
 			productReference = 805AFFC62CE5E809001D2F33 /* okulrAssignment.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +155,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3AC5679876BA4DC2D7757A53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-okulrAssignment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CD2B67E3892319160EE1349 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-okulrAssignment/Pods-okulrAssignment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-okulrAssignment/Pods-okulrAssignment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-okulrAssignment/Pods-okulrAssignment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		805AFFC22CE5E809001D2F33 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +210,7 @@
 /* Begin XCBuildConfiguration section */
 		805AFFDA2CE5E80A001D2F33 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E987C13265BC45011D756B3 /* Pods-okulrAssignment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -168,6 +239,7 @@
 		};
 		805AFFDB2CE5E80A001D2F33 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B8169FA9ECC698B101CA6FF /* Pods-okulrAssignment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
